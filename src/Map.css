@@ -1,0 +1,328 @@
+img{
+    
+    height: 500px;
+    width: 1280px;
+
+}
+.Penguin{
+    position:absolute;
+    top: 91%;
+    left: 55%;
+
+}
+.Rhino{
+    position:absolute;
+    top: 62%;
+    left: 55%;
+}
+.Leopard{
+    position:absolute;
+    top: 48%;
+    left: 49%;
+}
+.PolarBears{
+    position:absolute;
+    top: 22%;
+    left: 34%;
+}
+.Crocodiles{
+    position:absolute;
+    top: 55%;
+    left: 81%;
+}
+.Dolphins{
+    position:absolute;
+    top: 55%;
+    left: 10%;
+}
+.Pandas{
+    position:absolute;
+    top: 39%;
+    left: 78%;
+}
+.Whale{
+    position:absolute;
+    top: 77%;
+    left: 43%;
+}
+.Mink{
+    position:absolute;
+    top: 33%;
+    left: 54%;
+}
+.CaliCon{
+    position:absolute;
+    top: 37%;
+    left: 20%;
+}
+.Jaguars{
+    position:absolute;
+    top: 67%;
+    left: 30%;
+}
+
+
+.popup-Penguin{
+    height:500px;
+    width:50%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+.popup-header-Penguin{
+    display:flex;
+    justify-content:space-between;
+    padding: 0 15px 0 15px;
+    border-bottom: 2px solid black;
+
+}
+.main-Penguin{
+    background-color: beige;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+}
+
+
+
+.popup-Jaguar{
+    height:500px;
+    width:50%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+.popup-header-Jaguar{
+    display:flex;
+    justify-content:space-between;
+    padding: 0 15px 0 15px;
+    border-bottom: 2px solid black;
+
+}
+.main-Jaguar{
+    background-color: beige;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+}
+
+
+
+
+.popup-Dolphin{
+    height:500px;
+    width:50%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+.popup-header-Dolphin{
+    display:flex;
+    justify-content:space-between;
+    padding: 0 15px 0 15px;
+    border-bottom: 2px solid black;
+
+}
+.main-Dolphin{
+    background-color: beige;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+}
+
+
+.popup-Whale{
+    height:500px;
+    width:50%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+.popup-header-Whale{
+    display:flex;
+    justify-content:space-between;
+    padding: 0 15px 0 15px;
+    border-bottom: 2px solid black;
+
+}
+.main-Whale{
+    background-color: beige;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+}
+
+
+.popup-Calicondor{
+    height:500px;
+    width:50%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+.popup-header-Calicondor{
+    display:flex;
+    justify-content:space-between;
+    padding: 0 15px 0 15px;
+    border-bottom: 2px solid black;
+
+}
+.main-Calicondor{
+    background-color: beige;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+}
+
+
+.popup-Crocodile{
+    height:500px;
+    width:50%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+.popup-header-Crocodile{
+    display:flex;
+    justify-content:space-between;
+    padding: 0 15px 0 15px;
+    border-bottom: 2px solid black;
+
+}
+.main-Crocodile{
+    background-color: beige;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+}
+
+.popup-Leopard{
+    height:500px;
+    width:50%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+.popup-header-Leopard{
+    display:flex;
+    justify-content:space-between;
+    padding: 0 15px 0 15px;
+    border-bottom: 2px solid black;
+
+}
+.main-Leopard{
+    background-color: beige;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+}
+
+.main-polar-bear{
+    background-color: beige;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+  }
+  .popup-header-polar-bear{
+    display: flex;
+    justify-content:space-between;
+    padding: 0 15px 0 15px;
+    border-bottom: 2px solid black;
+  
+  }
+  .popup-polar-bear{
+    height:500px;
+    width:50%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+  }
+  
+  .main-Mink{
+    background-color: beige;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+  }
+  
+  .popup-header-Mink{
+    display:flex;
+    justify-content:space-between;
+    padding: 0 15px 0 15px;
+    border-bottom: 2px solid black;
+  }
+  
+  .popup-Mink{
+    height:500px;
+    width:50%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+  }
+  
+  .main-Panda{
+    background-color: beige;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+  }
+  .popup-header-Panda{
+    display:flex;
+    justify-content:space-between;
+    padding: 0 15px 0 15px;
+    border-bottom: 2px solid black;
+  }
+  
+  .popup-Panda{
+    height:500px;
+    width:50%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+  }
+  
+  .main-Rhino{
+    background-color: beige;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+  }
+  
+  .popup-Rhino{
+    display:flex;
+    justify-content:space-between;
+    padding: 0 15px 0 15px;
+    border-bottom: 2px solid black;
+  }
+  .popup-header-Rhino{
+    height:500px;
+    width:50%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+  }
+
+
+
