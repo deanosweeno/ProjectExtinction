@@ -1,0 +1,89 @@
+{
+	"animalList": [{
+
+		"crocodile": {
+			"habitat": "Swamps",
+			"region": "Africa,Asia,Australia",
+			"food": "insects, fish, small frogs, lizards",
+			"status": "Threatened",
+			"type": "reptile"
+    },
+		"dolphin": {
+			"habitat": "Warm ocean",
+			"region": "Atlantic Pacific, Indian and Mediterranean.",
+			"food": "fish, squid, shrimps, jellyfish",
+			"status": "Endangered",
+			"type": "Mammal"
+    },
+		"eagle": {
+			"habitat": "lakes and reservoirs",
+			"region": "Eurasia and Africa",
+			"food": "mammals and birds",
+			"status": "Endangered",
+			"type": "Avians"
+		},
+		"elephant": {
+			"habitat": "savannas, grasslands, and forests.",
+			"region": "sub-Saharan Africa, South Asia, and Southeast Asia.",
+			"food": "grass and bambo.",
+			"status": "vulnerable",
+			"type": ""
+    },
+		"giraffe": {
+			"habitat": "semi-arid savannah and savannah woodlands in Africa.",
+			"region": "East Africa",
+			"food": "Leaves and buds on trees and shrubs.",
+			"status": "vulnerable",
+			"type": "Mammals"
+    },
+		"gorilla": {
+			"habitat": "Lowland tropical rainforests of Central Africa.",
+			"region": "Central Africa",
+			"food": "Stems, bamboo shoots and fruits.",
+			"status": "Endangered",
+			"type": "Mammals"
+    },
+		"hippo": {
+			"habitat": "Shallow lakes, rivers and swamps",
+			"region": "East Africa",
+			"food": "short grass",
+			"status": "Vulnerable",
+			"type": "Mammals"
+    },
+		"tiger": {
+			"habitat": "Rain forests, grasslands, savannas",
+			"region": "South and East Asia",
+			"food": "Deer and wild boar.",
+			"status": "Endangered",
+			"type": "Mammal"
+    },
+		"orangutan": {
+			"habitat": "Rain forests of the Southeast Asian islands of Borneo and Sumatra.",
+			"region": "Southeast Asia",
+			"food": "Lychees, mangosteens, mangoes, and figs.",
+			"status": "Critically Endangered",
+			"type": "Mammal"
+    },
+		"california condor": {
+			"habitat": "Rocky, forested regions including canyons, gorges and mountains.",
+			"region": "southern California, Arizona.",
+			"food": "Carcasses of deer, pigs, cattle",
+			"status": "Endangered",
+			"type": "Bird"
+    },
+		"mink": {
+			"habitat": "Forested areas that are close to water.",
+			"region": "America",
+			"food": "Muskrats, rabbits, birds",
+			"status": "Least concern",
+			"type": "Mammal"
+    },
+		"jaguar": {
+			"habitat": "Tropical low-lying habitats close to lakes",
+			"region": "Sorthern Mexico, Northern Argentina",
+			"food": "Capybaras, deer, tortoises, iguanas",
+			"status": "Near Threatened",
+			"type": "Mammal"
+		}
+	}]
+}
