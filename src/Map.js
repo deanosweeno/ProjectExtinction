@@ -168,7 +168,12 @@ function Map () {
                 <h1 onClick={closePopupDolphin}>X</h1>
               </div>
               <div>
-                <p> Paragraph Here </p> 
+                <img className = "dolphinPic" src = "/images/dolphin pic.jpg"></img>
+                <p> <strong>habitat:</strong> Pacific Ocean</p>
+                <p> <strong>region:</strong> Pacific Ocean</p>
+                <button className = "dolphin-quiz">Quiz</button>
+                <button className = "dolphin-pairs">Pairs</button>
+                <button className = "dolphin-puzzle">puzzle</button>
               </div>
             </div>
           </div>:""}

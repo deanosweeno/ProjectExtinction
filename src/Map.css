@@ -310,12 +310,6 @@ img{
   }
   
   .popup-Rhino{
-    display:flex;
-    justify-content:space-between;
-    padding: 0 15px 0 15px;
-    border-bottom: 2px solid black;
-  }
-  .popup-header-Rhino{
     height:500px;
     width:50%;
     background-color: white;
@@ -323,6 +317,29 @@ img{
     top: 10%;
     left: 25%;
   }
+  .popup-header-Rhino{
+    display:flex;
+    justify-content:space-between;
+    padding: 0 15px 0 15px;
+    border-bottom: 2px solid black;
+  }
+  .dolphinPic{
+    height: 200px;
+    width: 100%;
+  }
+
+  .dolphin-quiz{
+    color: black;
+  }
+.dolphin-pairs{
+    color: black;
+    margin-left: 35%;
+}
+.dolphin-puzzle{
+    color: black;
+    margin-left: 35%;
+}
+
 
 
 
