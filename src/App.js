@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Map from './MapComponent/Map';
-import Splash from './SplashComponent/Splash.js'
+import Map from './Map';
+import Splash from './SplashComponent/Splash'
+
 
 
 function App(){
@@ -14,7 +15,6 @@ function App(){
         <Map/>
         </Splash>
       </div>
-       
     );
   }
 
