@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Map from './Map.js';
-import Splash from './Splash.js'
+import Map from './MapComponent/Map';
+import Splash from './SplashComponent/Splash.js'
 
 
 function App(){
