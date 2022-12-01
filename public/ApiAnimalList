@@ -1,5 +1,5 @@
 	[{
-			"name": "crocodile"
+			"name": "crocodile",
 			"habitat": "Swamps",
 			"region": "Africa,Asia,Australia",
 			"food": "insects, fish, small frogs, lizards",
@@ -7,7 +7,7 @@
 			"type": "reptile"
     },
 		 {
-			"name": "dolphin"
+			"name": "dolphin",
 			"habitat": "Warm ocean",
 			"region": "Atlantic Pacific, Indian and Mediterranean.",
 			"food": "fish, squid, shrimps, jellyfish",
@@ -15,7 +15,7 @@
 			"type": "Mammal"
     },
 		 {
-		 	"name": "eagle"
+		 	"name": "eagle",
 			"habitat": "lakes and reservoirs",
 			"region": "Eurasia and Africa",
 			"food": "mammals and birds",
@@ -23,7 +23,7 @@
 			"type": "Avians"
    },
 		 {
-			"name": "elephant"
+			"name": "elephant",
 			"habitat": "savannas, grasslands, and forests.",
 			"region": "sub-Saharan Africa, South Asia, and Southeast Asia.",
 			"food": "grass and bambo.",
@@ -31,7 +31,7 @@
 			"type": ""
     },
 		 {
-			"name": "giraffe"
+			"name": "giraffe",
 			"habitat": "semi-arid savannah and savannah woodlands in Africa.",
 			"region": "East Africa",
 			"food": "Leaves and buds on trees and shrubs.",
@@ -39,7 +39,7 @@
 			"type": "Mammals"
     },
 		 {
-			"name": "gorilla"
+			"name": "gorilla",
 			"habitat": "Lowland tropical rainforests of Central Africa.",
 			"region": "Central Africa",
 			"food": "Stems, bamboo shoots and fruits.",
@@ -47,7 +47,7 @@
 			"type": "Mammals"
     },
 		 {
-			"name": "hippo"
+			"name": "hippo",
 			"habitat": "Shallow lakes, rivers and swamps",
 			"region": "East Africa",
 			"food": "short grass",
@@ -55,7 +55,7 @@
 			"type": "Mammals"
     },
 		 {
-			"name": "tiger"
+			"name": "tiger",
 			"habitat": "Rain forests, grasslands, savannas",
 			"region": "South and East Asia",
 			"food": "Deer and wild boar.",
@@ -63,7 +63,7 @@
 			"type": "Mammal"
     },
 		 {
-			"name": "orangutan"
+			"name": "orangutan",
 			"habitat": "Rain forests of the Southeast Asian islands of Borneo and Sumatra.",
 			"region": "Southeast Asia",
 			"food": "Lychees, mangosteens, mangoes, and figs.",
@@ -71,7 +71,7 @@
 			"type": "Mammal"
     },
 		 {
-			"name": "california condor"
+			"name": "california condor",
 			"habitat": "Rocky, forested regions including canyons, gorges and mountains.",
 			"region": "southern California, Arizona.",
 			"food": "Carcasses of deer, pigs, cattle",
@@ -79,7 +79,7 @@
 			"type": "Bird"
     },
 		 {
-			"name": "mink":
+			"name": "mink",
 			"habitat": "Forested areas that are close to water.",
 			"region": "America",
 			"food": "Muskrats, rabbits, birds",
@@ -87,7 +87,7 @@
 			"type": "Mammal"
     },
 		 {
-			"name": "jaguar":
+			"name": "jaguar",
 			"habitat": "Tropical low-lying habitats close to lakes",
 			"region": "Sorthern Mexico, Northern Argentina",
 			"food": "Capybaras, deer, tortoises, iguanas",
