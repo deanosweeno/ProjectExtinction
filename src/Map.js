@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import './Map.css';
-import Pairs from './PairsComponents/Pairs'
+import Pairs from './Pairs'
 
 function Map () {
   //Default: Penguin --Pop Ups
@@ -132,6 +132,7 @@ function Map () {
           {popup?
           <div className ='main-Penguin'>
             <div className='popup-Penguin'>
+            <Pairs/>
               <div className='popup-header-Penguin'>
                 <h1>Penguin</h1>
                 <h1 onClick={closePopup}>X</h1>
@@ -163,6 +164,7 @@ function Map () {
           {popupDolphin?
           <div className ='main-Dolphin'>
             <div className='popup-Dolphin'>
+            <Pairs/>
               <div className='popup-header-Dolphin'>
                 <h1>Dolphins</h1>
                 <h1 onClick={closePopupDolphin}>X</h1>
@@ -179,6 +181,7 @@ function Map () {
           {popupWhale?
           <div className ='main-Whale'>
             <div className='popup-Whale'>
+            <Pairs/>
               <div className='popup-header-Whale'>
                 <h1>Whales</h1>
                 <h1 onClick={closePopupWhale}>X</h1>
@@ -194,6 +197,7 @@ function Map () {
           {popupCali?
           <div className ='main-Calicondor'>
             <div className='popup-Calicondor'>
+            <Pairs/>
               <div className='popup-header-Calicondor'>
                 <h1>California condors</h1>
                 <h1 onClick={closePopupCali}>X</h1>
@@ -209,6 +213,7 @@ function Map () {
           {popupCrocodile?
           <div className ='main-Crocodile'>
             <div className='popup-Crocodile'>
+            <Pairs/>
               <div className='popup-header-Crocodile'>
                 <h1>Crocodile</h1>
                 <h1 onClick={closePopupCrocodile}>X</h1>
@@ -224,6 +229,7 @@ function Map () {
           {popupLeopard?
           <div className ='main-Leopard'>
             <div className='popup-Leopard'>
+            <Pairs/>
               <div className='popup-header-Leopard'>
                 <h1>Leopard</h1>
                 <h1 onClick={closePopupLeopard}>X</h1>
@@ -241,6 +247,7 @@ function Map () {
           {popupPolarBear?
           <div className ='main-polar-bear'>
             <div className='popup-polar-bear'>
+            <Pairs/>
               <div className='popup-header-polar-bear'>
                 <h1>Polar bear</h1>
                 <h1 onClick={closePopupPolarBear}>X</h1>
@@ -257,6 +264,7 @@ function Map () {
           {popupMink?
           <div className ='main-Mink'>
             <div className='popup-Mink'>
+            <Pairs/>
               <div className='popup-header-Mink'>
                 <h1>Mink</h1>
                 <h1 onClick={closePopupMink}>X</h1>
@@ -273,6 +281,7 @@ function Map () {
           {popupPanda?
           <div className ='main-Panda'>
             <div className='popup-Panda'>
+            <Pairs/>
               <div className='popup-header-Panda'>
                 <h1>Panda</h1>
                 <h1 onClick={closePopupPanda}>X</h1>
@@ -290,6 +299,7 @@ function Map () {
           {popupCrocodile?
           <div className ='main-Panda'>
             <div className='popup-Panda'>
+            <Pairs/>
               <div className='popup-header-Panda'>
                 <h1>Crocodiles</h1>
                 <h1 onClick={closePopupCrocodile}>X</h1>
@@ -306,6 +316,7 @@ function Map () {
           {popupRhino?
           <div className ='main-Rhino'>
             <div className='popup-Rhino'>
+            <Pairs/>
               <div className='popup-header-Rhino'>
                 <h1>Rhino</h1>
                 <h1 onClick={closePopupRhino}>X</h1>
