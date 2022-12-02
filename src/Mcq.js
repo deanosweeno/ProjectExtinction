@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import "./styles.css";
-import PopupMcq from './McqComponents/PopupMcq'
+
+import PopupMcq from './McqComponent/PopupMcq';
 
 function Mcq() {
   //properties
@@ -106,3 +106,4 @@ function Mcq() {
   );
 }
 export default Mcq;
+
