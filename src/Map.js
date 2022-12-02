@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import './Map.css';
 import Pairs from './Pairs'
+import Mcq from './Mcq'
 
 function Map () {
   //Default: Penguin --Pop Ups
@@ -133,6 +134,7 @@ function Map () {
           <div className ='main-Penguin'>
             <div className='popup-Penguin'>
             <Pairs/>
+            <Mcq/>
               <div className='popup-header-Penguin'>
                 <h1>Penguin</h1>
                 <h1 onClick={closePopup}>X</h1>

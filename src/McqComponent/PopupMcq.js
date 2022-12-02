@@ -1,4 +1,4 @@
-
+import './PopupMcq.css'
 function PopupMcq(props) 
 {
   return (props.trigger) ? (
