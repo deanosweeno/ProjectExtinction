@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import "./styles.css";
+import PopupMcq from './McqComponents/PopupMcq'
 
 function Mcq() {
   //properties
+  const [buttonPopup, setButtonPopup] = useState(false);
   const [showFinalResults, setFinalResults] = useState(false);
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -64,12 +66,8 @@ function Mcq() {
   return (
     //section headers
     <div class="Yee">
-      {/* Header*/}
-      <h1> Animal Quiz</h1>
-
-      {/* Current Score*/}
-      <h2> Current Score {score} </h2>
-
+      <button onClick={() => setButtonPopup(true)}>Open Mcq</button>
+      <PopupMcq trigger={buttonPopup} setTrigger={setButtonPopup}>
       {showFinalResults ? (
         /*Final results card*/
         <div class="final-results">
@@ -103,6 +101,7 @@ function Mcq() {
           </ul>
         </div>
       )}
+      </PopupMcq>
     </div>
   );
 }
