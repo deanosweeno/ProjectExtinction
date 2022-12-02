@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import '.McqComponent/Mcq.css';
 import PopupMcq from './McqComponent/PopupMcq';
 
 function Mcq() {
