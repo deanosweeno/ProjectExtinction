@@ -66,7 +66,7 @@ function Mcq() {
   return (
     //section headers
     <div class="Yee">
-      <button classname= "OPMCQ" onClick={() => setButtonPopup(true)}>Open Mcq</button>
+      <button class = "OPMCQ" onClick={() => setButtonPopup(true)}>Open Mcq</button>
       <PopupMcq trigger={buttonPopup} setTrigger={setButtonPopup}>
       {showFinalResults ? (
         /*Final results card*/
