@@ -90,12 +90,12 @@ function Mcq() {
           <ul>
             {questions[currentQuestion].options.map((option) => {
               return (
-                <li
+                <div class = 'list'
                   onClick={() => optionClicked(option.isCorrect)}
                   key={option.id}
                 >
                   {option.text}
-                </li>
+                </div>
               );
             })}
           </ul>
