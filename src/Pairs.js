@@ -54,7 +54,7 @@ function Pairs()
 
   return (
     <div className="Pairs">
-      <button onClick={() => setButtonPopup(true)}>Open Pairs</button> 
+      <button classname = "OPEN" onClick={() => setButtonPopup(true)}>Open Pairs</button> 
       <PopupPairs trigger={buttonPopup} setTrigger={setButtonPopup}>   
       <button onClick={shuffle}>Retry</button> 
       <div className="Grid">
