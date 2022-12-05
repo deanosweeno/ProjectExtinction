@@ -47,9 +47,8 @@
   }
   .OPMCQ
   {
-    position: absolute;
-    top: 0%;
-    right: 83%;
+    position: relative;
+   right: auto;
   }
   
  
