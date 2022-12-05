@@ -2,6 +2,7 @@
 import './PairsComponents/Pairs.css';
 import { useEffect, useState } from 'react'
 import SingleCard from './PairsComponents/SingleCard'
+import {fetchPost} from "./FetchApi";
 import ApiAnimalList from './ApiAnimalList.json'
 import PopupPairs from './PairsComponents/PopupPairs'
 import Map from './Map.js'
@@ -25,6 +26,15 @@ function Pairs()
  
  const handleChoice = (card) => {choiceOne ? setChoiceTwo(card) : setChoiceOne(card)}
 
+ useEffect(() => {
+  const[data,setData] = useState()
+  async function fetchData(){
+    const response = await fetch("https://raw.githubusercontent.com/bengorm/AnimalfactsApi/main/db.json")
+    data = await response.json();
+    setData(data.animalList)
+  }
+  fetchData();
+},[])
  useEffect(() => 
  {
   if(choiceOne && choiceTwo)
