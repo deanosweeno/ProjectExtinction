@@ -144,7 +144,8 @@ function Map () {
                   They live almost exclusively in the Southern Hemisphere: 
                   only one species, the Galápagos penguin, is found north of the Equator. 
                   Highly adapted for life in the water, 
-                  penguins have countershaded dark and white plumage and flippers for swimming.</p>
+                  penguins have countershaded dark and white plumage and flippers for swimming.
+                  Penguins eat squids, krill, and fish. </p>
               </div>
             </div>
           </div>:""}
@@ -164,7 +165,10 @@ function Map () {
                 <p> <strong>Status: </strong>Near Threatened</p>
                 <p> The jaguar is a large cat species and the only living member of the genus Panthera native to the Americas. 
                   With a body length of up to 1.85 m and a weight of up to 158 kg, 
-                  it is the largest cat species in the Americas and the third largest in the world.</p>
+                  it is the largest cat species in the Americas and the third largest in the world.
+                  Jaguars often live in tropical low-lying habitats close to lakes, rivers and inland wetlands.
+                  Jaguars are opportunistic hunters and can prey upon almost anything they come across. Capybaras,
+                  deer, tortoises, iguanas, armadillos, fish, birds and monkeys are just some of the prey that jaguars eat.</p>
                 
               </div>
             </div>
@@ -185,7 +189,12 @@ function Map () {
                 <p> <strong>Status: </strong> Endangered</p>
                 <p> A dolphin is an aquatic mammal within the infraorder Cetacea. 
                   Dolphin species belong to the families Delphinidae, Platanistidae, Iniidae, Pontoporiidae, and the extinct Lipotidae.
-                  There are 40 extant species named as dolphins. </p>
+                  There are 40 extant species named as dolphins. 
+                  Dolphins live in open oceans, coastal waters that include bays and inlets, river basins, 
+                  certain inland seas, gulfs, and in channels.
+                  Dolphins are active predators and eat a wide variety of fishes, squids, 
+                  and crustaceans such as shrimps.
+                  </p>
               </div>
             </div>
           </div>:""}
@@ -207,7 +216,10 @@ function Map () {
                 <p> <strong>Status: </strong>Critically Endangered </p>
                 <p> Whales are a widely distributed and diverse group of fully aquatic placental marine mammals. 
                   As an informal and colloquial grouping, they correspond to large members of the infraorder Cetacea, i.e. 
-                  all cetaceans apart from dolphins and porpoises. </p>
+                  all cetaceans apart from dolphins and porpoises.
+                  Whales swim in all of the major oceans from the Arctic and Antarctic environments to the tropics
+                  located near the center of the equator.
+                  They love to eat krill, fish, zooplankton, phytoplankton, and algae. </p>
               </div>
             </div>
           </div>:""}
@@ -230,31 +242,12 @@ function Map () {
                   but has since been reintroduced to northern Arizona and southern Utah (including the Grand Canyon area and Zion National Park),
                    the coastal mountains of California, and northern Baja California in Mexico.
                    Although four other fossil members are known, it is the only surviving member of the genus Gymnogyps. 
-                   The species is listed by the International Union for the Conservation of Nature as Critically 
-                   Endangered, and similarly considered Critically Imperiled by NatureServe. </p>
+                   These superb gliders travel widely to feed on carcasses of deer, pigs, cattle, sea lions, whales, and other animals. </p>
               </div>
             </div>
           </div>:""}
         </div>
 
-        <div>
-        {popupCrocodile?
-          <div className ='main-Crocodile'>
-            <div className='popup-Crocodile'>
-            <Pairs/>
-              <div className='popup-header-Crocodile'>
-                <h1>Crocodiles</h1>
-                <h1 onClick={closePopupCrocodile}>X</h1>
-              </div>
-              <div>
-                { <img className = "CrocodilePic" src = "/images/crocodile.png" alt =""></img> }
-                <p> <strong>Status: </strong> Critically Endangered</p>
-                <p>Crocodiles or true crocodiles are large semiaquatic reptiles 
-                  that live throughout the tropics in Africa, Asia, the Americas and Australia.  </p>
-              </div>
-            </div>
-          </div>:""}
-        </div>
 
         <div>
         {popupLeopard?
@@ -270,7 +263,9 @@ function Map () {
                 <p> <strong>Status: </strong>Endangered </p>
                 <p> The leopard is one of the five extant species in the genus Panthera, a member of the cat family, Felidae.
                    It occurs in a wide range in sub-Saharan Africa, in some parts of Western and Central Asia, 
-                   Southern Russia, and on the Indian subcontinent to Southeast and East Asia. </p>
+                   Southern Russia, and on the Indian subcontinent to Southeast and East Asia.
+                   Their diet fluctuates with prey availability, which ranges from strong-scented carrion, fish, reptiles, 
+                   and birds to mammals such as rodents, hares, warthogs, antelopes, and baboons. </p>
 
               </div>
             </div>
@@ -294,7 +289,10 @@ function Map () {
                 <p> <strong>Status: </strong> Critically Endangered </p>
                 <p>The polar bear is a hypercarnivorous bear whose native range lies largely within the Arctic Circle, 
                   encompassing the Arctic Ocean, its surrounding seas and surrounding land masses. 
-                  It is the largest extant bear species, as well as the largest extant land carnivore.  </p>
+                  It is the largest extant bear species, as well as the largest extant land carnivore.
+                  Polar bears feed primarily on ringed seals, but will also eat bearded seals, harp seals, hooded and 
+                  harbor seals, when available.
+                   Larger prey species such as walrus, narwhal and beluga are occasionally hunted. </p>
               </div>
             </div>
           </div>:""}
@@ -314,7 +312,12 @@ function Map () {
                 <p> <strong>Status: </strong> (North America: Least Concern) (Europe: Critically Endagered)</p>
                 <p>Mink are dark-colored, semiaquatic, carnivorous mammals of the genera Neogale and Mustela 
                   and part of the family Mustelidae, which also includes weasels, otters, and ferrets.
-                   There are two extant species referred to as "mink": the American mink and the European mink  </p>
+                   There are two extant species referred to as "mink": the American mink and the European mink.
+                   The one essential element which an area must have for the mink is a slow moving fresh water body such as rivers,
+                  lakes, ponds or streams. Mink hunt muskrats, rabbits, birds, frogs, fish, crayfish and insects.
+                   During the winter, they sometimes kill more than they need and stock
+                    food in their dens. Minks can climb trees and swim underwater to catch prey.
+                    </p>
               </div>
             </div>
           </div>:""}
@@ -333,8 +336,10 @@ function Map () {
                 { <img className = "PandaPic" src = "/images/panda.png" alt =""></img> }
                 <p> <strong>Status: </strong>Vulnerable </p>
                 <p>The giant panda, also known as the panda bear, is a bear species endemic to China.
-                   It is characterised by its bold black-and-white coat and rotund body.
-                   The name "giant panda" is sometimes used to distinguish it from the red panda, a neighboring musteloid.  </p>
+                Pandas live mainly in temperate forests high in the mountains of southwest China, 
+                where they subsist almost entirely on bamboo.
+                It is characterised by its bold black-and-white coat and rotund body.
+                The name "giant panda" is sometimes used to distinguish it from the red panda, a neighboring musteloid.  </p>
               </div>
             </div>
           </div>:""}
@@ -352,10 +357,12 @@ function Map () {
               </div>
               <div>
                 { <img className = "CrocodilePic" src = "/images/crocodile.png" alt =""></img> }
-                <p> <strong>Status: </strong> Critically Endangered</p>
-                <p>Crocodiles or true crocodiles are large semiaquatic reptiles 
-                  that live throughout the tropics in Africa, Asia, the Americas and Australia.  </p>
-                
+                <p> <strong>Status: </strong> Threatened</p>
+                <p>Crocodiles are large semiaquatic reptiles 
+                  that live throughout the tropics in Africa, Asia, the Americas and Australia. Since
+                  they are semiaquatic, they tend to congregate in habitats such as rivers,
+                  lakes and swamps. Crocodiles are  carnivorous, so they eat a 
+                  variety of things, such as small mammals, frogs, insects, lizards etc.</p>
               </div>
             </div>
           </div>:""}
@@ -375,8 +382,10 @@ function Map () {
                 <p> <strong>Status: </strong>Critically Endangered </p>
                 <p>A rhinoceros, commonly abbreviated to rhino,
                    is a member of any of the five extant species of odd-toed ungulates in the family Rhinocerotidae. 
-                  Two of the extant species are native to Africa, and three to South and Southeast Asia. </p>
-                
+                  Two of the extant species are native to Africa, and three to South and Southeast Asia.
+                  Black rhinos are browsers that get most of their sustenance from eating trees and bushes. 
+                  They use their lips to pluck leaves and fruit from the branches.</p>
+                 
               </div>
             </div>
           </div>:""}

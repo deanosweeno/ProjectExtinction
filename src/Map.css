@@ -96,6 +96,7 @@ img{
     position: absolute;
     top: 10%;
     left: 25%;
+    font-size: smaller;
     
 }
 .popup-header-Jaguar{
@@ -123,6 +124,7 @@ img{
     position: absolute;
     top: 10%;
     left: 25%;
+    font-size: smaller;
     
 }
 .popup-header-Dolphin{
@@ -148,7 +150,8 @@ img{
     position: absolute;
     top: 10%;
     left: 25%;
-    font-size: small;
+    font-size: smaller;
+    
 }
 .popup-header-Whale{
     display:flex;
@@ -222,7 +225,7 @@ img{
     position: absolute;
     top: 10%;
     left: 25%;
-    
+    font-size: small;
 }
 .popup-header-Leopard{
     display:flex;
@@ -260,7 +263,7 @@ img{
     position: absolute;
     top: 10%;
     left: 25%;
-    
+    font-size: small;
   }
   
   .main-Mink{
@@ -285,7 +288,7 @@ img{
     position: absolute;
     top: 10%;
     left: 25%;
-    
+    font-size: small;
   }
   
   .main-Panda{
@@ -310,6 +313,7 @@ img{
     top: 10%;
     left: 25%;
     font-size: small;
+    
   }
   
   .main-Rhino{
@@ -327,6 +331,7 @@ img{
     position: absolute;
     top: 10%;
     left: 25%;
+    font-size: small;
     
   }
   .popup-header-Rhino{

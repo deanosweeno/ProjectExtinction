@@ -12,8 +12,8 @@ function App(){
         <button className="Start-btn" onClick={() => setButtonPopup(true)}>Learn!</button> 
         <Splash trigger={buttonPopup} setTrigger={setButtonPopup}>     
         <Map/>
-        </Splash>
-      </div>
+        </Splash> 
+      </div> 
     );
   }
 
