@@ -133,6 +133,7 @@ function Map () {
         {popup?
           <div className ='main-Penguin'>
             <div className='popup-Penguin'>
+            <const AN = 'penguin'/>
             <Pairs/>
             <Mcq/>
               <div className='popup-header-Penguin'>
@@ -156,6 +157,7 @@ function Map () {
         {popupJaguar?
           <div className ='main-Jaguar'>
             <div className='popup-Jaguar'>
+            <const AN = 'jaguar'/>
               <Pairs/>
               <Mcq/>
               <div className='popup-header-Jaguar'>
@@ -178,6 +180,7 @@ function Map () {
         {popupDolphin?
           <div className ='main-Dolphin'>
             <div className='popup-Dolphin'>
+            <const AN = 'dolphin'/>
             <Pairs/>
             <Mcq/>
               <div className='popup-header-Dolphin'>
@@ -201,6 +204,7 @@ function Map () {
         {popupWhale?
           <div className ='main-Whale'>
             <div className='popup-Whale'>
+            <const AN = 'whale'/>
             <Pairs/>
             <Mcq/>
               <div className='popup-header-Whale'>
@@ -222,6 +226,7 @@ function Map () {
         {popupCali?
           <div className ='main-Calicondor'>
             <div className='popup-Calicondor'>
+            <const AN = 'calicondor'/>
             <Pairs/>
             <Mcq/>
               <div className='popup-header-Calicondor'>
@@ -247,6 +252,7 @@ function Map () {
         {popupCrocodile?
           <div className ='main-Crocodile'>
             <div className='popup-Crocodile'>
+            <const AN = 'crocodile'/>
             <Pairs/>
             <Mcq/>
               <div className='popup-header-Crocodile'>
@@ -267,6 +273,7 @@ function Map () {
         {popupLeopard?
           <div className ='main-Leopard'>
             <div className='popup-Leopard'>
+            <const AN = 'leopard'/>
             <Pairs/>
             <Mcq/>
               <div className='popup-header-Leopard'>
@@ -292,6 +299,7 @@ function Map () {
         {popupPolarBear?
           <div className ='main-polar-bear'>
             <div className='popup-polar-bear'>
+            <const AN = 'polar-bear'/>
             <Pairs/>
             <Mcq/>
               <div className='popup-header-polar-bear'>
@@ -334,6 +342,7 @@ function Map () {
         {popupPanda?
           <div className ='main-Panda'>
             <div className='popup-Panda'>
+            <const AN = 'panda'/>
             <Pairs/>
             <Mcq/>
               <div className='popup-header-Panda'>
@@ -353,30 +362,10 @@ function Map () {
 
 
         <div>
-        {popupCrocodile?
-          <div className ='main-Crocodile'>
-            <div className='popup-Crocodile'>
-            <Pairs/>
-            <Mcq/>
-              <div className='popup-header-Crocodile'>
-                <h1>Crocodiles</h1>
-                <h1 onClick={closePopupCrocodile}>X</h1>
-              </div>
-              <div>
-                { <img className = "CrocodilePic" src = "/images/crocodile.png" alt =""></img> }
-                <p> <strong>Status: </strong> Critically Endangered</p>
-                <p>Crocodiles or true crocodiles are large semiaquatic reptiles 
-                  that live throughout the tropics in Africa, Asia, the Americas and Australia.  </p>
-                
-              </div>
-            </div>
-          </div>:""}
-        </div>
-
-        <div>
         {popupRhino?
           <div className ='main-Rhino'>
             <div className='popup-Rhino'>
+            <const AN = 'rhino'/>
             <Pairs/>
             <Mcq/>
               <div className='popup-header-Rhino'>

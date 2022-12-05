@@ -2,7 +2,9 @@
 import './PairsComponents/Pairs.css';
 import { useEffect, useState } from 'react'
 import SingleCard from './PairsComponents/SingleCard'
+import ApiAnimalList from './ApiAnimalList.json'
 import PopupPairs from './PairsComponents/PopupPairs'
+import Map from './Map.js'
 const Imgs = [{ "src": "/PairsImages/01.jpg", matched: false }, { "src": "/PairsImages/02.jpg", matched: false }, { "src": "/PairsImages/03.jpg", matched: false }] //will call properties from external array here
 function Pairs() 
 {
