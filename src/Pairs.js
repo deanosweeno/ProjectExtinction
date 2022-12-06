@@ -26,15 +26,13 @@ function Pairs()
  
  const handleChoice = (card) => {choiceOne ? setChoiceTwo(card) : setChoiceOne(card)}
 
- useEffect(() => {
-  const[data,setData] = useState()
-  async function fetchData(){
-    const response = await fetch("https://raw.githubusercontent.com/bengorm/AnimalfactsApi/main/db.json")
-    data = await response.json();
-    setData(data.animalList)
-  }
-  fetchData();
-},[])
+ const[data,setData] = useState()
+ useEffect(async() => {
+   const response = await fetch("https://raw.githubusercontent.com/bengorm/AnimalfactsApi/main/db.json");
+   const data = await response.json();
+   console.log("This is the data ",data.animalList)
+   setData(data.animalList)
+ },[])
  useEffect(() => 
  {
   if(choiceOne && choiceTwo)
