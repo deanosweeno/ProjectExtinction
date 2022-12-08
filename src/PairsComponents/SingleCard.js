@@ -17,4 +17,4 @@ export default function SingleCard({card, handleChoice, flipped, disabled })
           </div>
         </div>
     )
-}
+} //Assigns image files to tops and bottoms of individual cards

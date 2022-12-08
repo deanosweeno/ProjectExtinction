@@ -2,12 +2,34 @@
 import './PairsComponents/Pairs.css';
 import { useEffect, useState } from 'react'
 import SingleCard from './PairsComponents/SingleCard'
-import ApiAnimalList from './ApiAnimalList.json'
 import PopupPairs from './PairsComponents/PopupPairs'
-import Map from './Map.js'
-const Imgs = [{ "src": "/PairsImages/01.jpg", matched: false }, { "src": "/PairsImages/02.jpg", matched: false }, { "src": "/PairsImages/03.jpg", matched: false }] //will call properties from external array here
+const PreImgs = ["/PairsImages/1.jpg", "/PairsImages/2.jpg"
+, "/PairsImages/3.jpg", "/PairsImages/4.jpg"
+, "/PairsImages/5.jpg", "/PairsImages/6.jpg"
+, "/PairsImages/7.jpg", "/PairsImages/8.jpg"
+, "/PairsImages/9.jpg", "/PairsImages/10.jpg"
+, "/PairsImages/11.jpg"];
+var randomImg = () =>{
+  return PreImgs[Math.floor(Math.random() * PreImgs.length)];
+}
+
 function Pairs() 
 {
+  const [img, setimg] =useState(randomImg());
+  const [img2, setimg2] =useState(randomImg());
+  const [img3, setimg3] =useState(randomImg());
+  const [img4, setimg4] =useState(randomImg());
+  const [img5, setimg5] =useState(randomImg());
+  const [img6, setimg6] =useState(randomImg());
+
+  useState(() => {setimg(randomImg)});
+  useState(() => {setimg2(randomImg)});
+  useState(() => {setimg3(randomImg)});
+  useState(() => {setimg4(randomImg)});
+  useState(() => {setimg5(randomImg)});
+  useState(() => {setimg6(randomImg)});
+  const Imgs = [{"src": img, matched: false}, {"src": img2, matched: false}, {"src": img3, matched: false}
+  , {"src": img4, matched: false}, {"src": img5, matched: false}, {"src": img6, matched: false}];
 
   const [buttonPopup, setButtonPopup] = useState(false);
   const [turns, setTurns] = useState(0)
