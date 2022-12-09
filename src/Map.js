@@ -142,11 +142,8 @@ function Map () {
               <div>
                 { <img className = "PenguinPic" src = "/images/Penguin.png" alt =""></img>}
                 <p> <strong>Status: </strong>Threatened</p>
-                <p> Penguins are a group of aquatic flightless birds. 
-                  They live almost exclusively in the Southern Hemisphere: 
-                  only one species, the Galápagos penguin, is found north of the Equator. 
-                  Highly adapted for life in the water, 
-                  penguins have countershaded dark and white plumage and flippers for swimming.
+                <p> Penguins are a group of swimming birds that can't fly. 
+                  They mainly live in Antartica and prefer coastal regions.
                   Penguins eat squids, krill, and fish. </p>
               </div>
             </div>
@@ -215,9 +212,9 @@ function Map () {
               <div>
                 { <img className = "WhalePic" src = "/images/Whales.png" alt =""></img> }
                 <p> <strong>Status: </strong>Critically Endangered </p>
-                <p> Whales are widely distributed grorup of aquatic mammals.
-                  Whales swim in all of the major oceans from the Arctic and Antarctic environments to the tropics
-                  located near the center of the equator.
+                <p> Whales are a widely distributed group of aquatic mammals.
+                  Whales swim in almost all major oceans.
+                  They love salt water.
                   They love to eat krill, fish, phytoplankton, and algae. </p>
               </div>
             </div>
@@ -239,7 +236,7 @@ function Map () {
                 <p> <strong>Status: </strong> Critically Endangered</p>
                 <p> The California condor is a vulture and the largest land bird in North American. 
                     It is extinct in the wild, but has since been reintroduced to Arizona, Utah, and California.
-                   They are scavengers and love to eat carcasses of deer, pigs, cattle, sea lions, whales, and other animals. </p>
+                   They are scavengers and love to eat deer, pigs, cattle, sea lions, whales, and other animals. </p>
               </div>
             </div>
           </div>:""}
@@ -308,9 +305,9 @@ function Map () {
                 <p> <strong>Status: </strong> (North America: Least Concern) (Europe: Critically Endagered)</p>
                 <p>Mink are dark-colored mammals, they like to live in forested land and water.
                    They love slow moving fresh water body such as rivers, lakes, ponds or streams. 
-                   Mink hunt muskrats, rabbits, birds, frogs, fish, crayfish and insects.
-                   During the winter, they sometimes kill more than they need and stock
-                    food in their dens. Minks can climb trees and swim underwater to catch prey.
+                   Mink hunt rabbits, birds, frogs, fish, and insects.
+                   During the winter, they sometimes hunt more than they need to stock
+                    food in their dens.
                     </p>
               </div>
             </div>
@@ -330,11 +327,10 @@ function Map () {
               <div>
                 { <img className = "PandaPic" src = "/images/panda.png" alt =""></img> }
                 <p> <strong>Status: </strong>Vulnerable </p>
-                <p>The giant panda, also known as the panda bear, is a bear species endemic to China.
-                Pandas live mainly in temperate forests high in the mountains of southwest China, 
-                where they subsist almost entirely on bamboo.
-                It is characterised by its bold black-and-white coat and rotund body.
-                The name "giant panda" is sometimes used to distinguish it from the red panda, a neighboring musteloid.  </p>
+                <p>The panda bear lives in China.
+                Pandas live mainly in forests high in the mountains, 
+                where they eat bamboo.
+                  </p>
               </div>
             </div>
           </div>:""}
@@ -354,11 +350,10 @@ function Map () {
               <div>
                 { <img className = "CrocodilePic" src = "/images/crocodile.png" alt =""></img> }
                 <p> <strong>Status: </strong> Threatened</p>
-                <p>Crocodiles are large semiaquatic reptiles 
-                  that live throughout the tropics in Africa, Asia, the Americas and Australia. Since
-                  they are semiaquatic, they tend to congregate in habitats such as rivers,
+                <p>Crocodiles are large reptiles, that live in Africa, Asia, the Americas and Australia. 
+                  They like to live on land and water, so they tend to congregate in habitats such as rivers,
                   lakes and swamps. Crocodiles are  carnivorous, so they eat a 
-                  variety of things, such as small mammals, frogs, insects, lizards etc.</p>
+                  variety of things, such as small mammals, frogs, insects, and lizards.</p>
               </div>
             </div>
           </div>:""}
@@ -377,10 +372,8 @@ function Map () {
               <div>
                 { <img className = "RhinoPic" src = "/images/Rhino.png" alt =""></img> }
                 <p> <strong>Status: </strong>Critically Endangered </p>
-                <p>A rhinoceros, commonly abbreviated to rhino,
-                   is a member of any of the five extant species of odd-toed ungulates in the family Rhinocerotidae. 
-                  Two of the extant species are native to Africa, and three to South and Southeast Asia.
-                  Black rhinos are browsers that get most of their sustenance from eating trees and bushes. 
+                <p>Rhino's are native to Africa, South and Southeast Asia.
+                  Rhinos are browsers that eat mostly trees and bushes. 
                   They use their lips to pluck leaves and fruit from the branches.</p>
                  
               </div>
