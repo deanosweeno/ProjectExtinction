@@ -2,20 +2,20 @@ import React, { useState, useEffect} from 'react';
 import './McqComponent/Mcq.css';
 import PopupMcq from './McqComponent/PopupMcq';
 import {fetchPost} from "./FetchApi";
-
+const animalNames = ["crocodile", "condor", "dolphin", "rhino", "giraffe", "gorilla", "whale", "PBears", "Peng", "mink"];
 function Mcq() {
   //properties
   const[data,setData] = useState()
+
+
   useEffect(() => {
     const loadData = async () => {
       const response = await fetch("https://raw.githubusercontent.com/bengorm/AnimalfactsApi/main/db.json");
       const data = await response.json();
-      console.log("This is the data ", data.animalList)
       setData(data.animalList)
     };
     loadData();
   },[])
-  
 
   const [buttonPopup, setButtonPopup] = useState(false);
   const [showFinalResults, setFinalResults] = useState(false);
