@@ -10,13 +10,13 @@ function Mcq() {
 
   useEffect(() => {
     const loadData = async () => {
-      const response = await fetch("https://raw.githubusercontent.com/bengorm/AnimalfactsApi/main/db.json");
+      const response = await fetch("https://raw.githubusercontent.com/deanosweeno/ProjectExtinction/main/public/animalAPI.json");
       const data = await response.json();
       setData(data.animalList)
     };
     loadData();
   },[])
-
+  console.log(data[0]);
   const [buttonPopup, setButtonPopup] = useState(false);
   const [showFinalResults, setFinalResults] = useState(false);
   const [score, setScore] = useState(0);
