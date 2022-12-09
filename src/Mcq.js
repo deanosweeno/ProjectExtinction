@@ -1,7 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import './McqComponent/Mcq.css';
-import PopupMcq from './McqComponent/PopupMcq';
-import {fetchPost} from "./FetchApi";
+import PopupMcq from './McqComponent/PopupMcq'; 
 const animalNames = ["crocodile", "condor", "dolphin", "rhino", "panda", "Leopard", "whale", "PBear", "peng", "mink", "jaguar"];
 function Mcq() {
   //properties
@@ -16,7 +15,8 @@ function Mcq() {
     };
     loadData();
   },[])
-  console.log(data[0]);
+  const array = [data]
+  console.log(array[0])
   const [buttonPopup, setButtonPopup] = useState(false);
   const [showFinalResults, setFinalResults] = useState(false);
   const [score, setScore] = useState(0);

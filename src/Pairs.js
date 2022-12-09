@@ -9,6 +9,7 @@ const PreImgs = ["/PairsImages/1.jpg", "/PairsImages/2.jpg"
 , "/PairsImages/7.jpg", "/PairsImages/8.jpg"
 , "/PairsImages/9.jpg", "/PairsImages/10.jpg"
 , "/PairsImages/11.jpg"];
+
 var randomImg = () =>{
   return PreImgs[Math.floor(Math.random() * PreImgs.length)];
 }
