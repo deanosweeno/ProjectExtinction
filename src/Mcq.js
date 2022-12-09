@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 import './McqComponent/Mcq.css';
 import PopupMcq from './McqComponent/PopupMcq';
 import {fetchPost} from "./FetchApi";
-const animalNames = ["crocodile", "condor", "dolphin", "rhino", "giraffe", "gorilla", "whale", "PBears", "Peng", "mink"];
+const animalNames = ["crocodile", "condor", "dolphin", "rhino", "panda", "Leopard", "whale", "PBear", "peng", "mink", "jaguar"];
 function Mcq() {
   //properties
   const[data,setData] = useState()

@@ -1,0 +1,71 @@
+{
+	"animalList": [{
+
+		"crocodile": {
+      "id":"1",
+			"habitat": "swamps",
+			"region": "africa, asia, australia",
+			"food": "insects, fish, small animals"
+    },
+		"dolphin": {
+      "id":"2",
+			"habitat": "warm ocean",
+			"region": "all oceans",
+			"food": "fish, squid, shrimps, jellyfish"
+    },
+		"condor": {
+      "id":"3",
+			"habitat": "rocky, forested regions",
+			"region": "california",
+			"food": "scavenger"
+	},
+		"panda": {
+      "id":"4",
+			"habitat": "bamboo forest",
+			"region": "southwest china",
+			"food": "bamboo"
+    },
+		"rhino": {
+      "id":"5",
+			"habitat": "savannah and grasslands",
+			"region": "africa",
+			"food": "small shrubs"
+    },
+		"PBears": {
+      "id":"6",
+			"habitat": "sea ice",
+			"region": "near northern pole",
+			"food": "seals"
+    },
+		"leopard": {
+      "id":"7",
+			"habitat": "deserts and grasslands",
+			"region": "africa and asia",
+			"food": "almost anything that moves"
+    },
+		"whale": {
+      "id":"8",
+			"habitat": "salt water",
+			"region": "all oceans",
+			"food": "schools of fish"
+    },
+		"peng": {
+      "id":"9",
+			"habitat": "coastal areas",
+			"region": "antarctica",
+			"food": "fishes"
+    },
+		"mink": {
+      "id":"10",
+			"habitat": "forested",
+			"region": "eastern europe",
+			"food": "muskrats, rabbits, birds"
+    },
+		"jaguar": {
+      "id":"11",
+			"habitat": "tropics",
+			"region": "southern mexico, northern argentina",
+			"food": "deer and rodents"
+		}
+	}]
+}
