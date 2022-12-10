@@ -1,10 +1,22 @@
-// import React,{useState,useEffect } from "react";
+import React,{useState, useEffect } from "react";
 
-// export default function FetchApi() {
+function FetchData() {
 
-    export const fetchPost = async () => {
-        const response = await fetch("https://raw.githubusercontent.com/deanosweeno/ProjectExtinction/main/public/animalAPI.json");
-        const data = await response.json();
-        return data
-      
-      };
+  const[data,setData] = useState()
+  const [dataReturn] = [data];
+   useEffect(() => {
+      const loadData = async () => {
+      const response = await fetch("https://raw.githubusercontent.com/deanosweeno/ProjectExtinction/main/public/animalAPI.json");
+      const data = await response.json();
+      setData(data.animalList)
+    };
+
+    loadData();
+  },[])
+  console.log(data);
+  return (
+    <div>
+      {console.log(data)};
+    </div>
+  );
+} export default FetchData;

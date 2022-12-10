@@ -1,63 +1,54 @@
 import React, { useState, useEffect} from 'react';
 import './McqComponent/Mcq.css';
 import PopupMcq from './McqComponent/PopupMcq';
-import { fetchPost } from './FetchApi';
 const animalNames = ["crocodile", "condor", "dolphin", "rhino", "panda", "Leopard", "whale", "PBear", "peng", "mink", "jaguar"];
 
 function Mcq() {
   //properties
-  const[data,setData] = useState()
+ const[croc,setCroc] = useState([])
+ const[dolph,setDolph] = useState([])
+ const[condor,setCondor] = useState([])
+ const[panda,setPanda] = useState([])
+ const[rhino,setRhino] = useState([])
+ const[PBears,setPBears] = useState([])
+ const[leopard,setLeopard] = useState([])
+ const[whale,setWhale] = useState([])
+ const[peng,setPeng] = useState([])
+ const[mink,setMink] = useState([])
+ const[jaguar,setJaguar] = useState([])
   useEffect(() => {
     const loadData = async () => {
       const response = await fetch("https://raw.githubusercontent.com/deanosweeno/ProjectExtinction/main/public/animalAPI.json");
-      const data = await response.json();
-      setData(data.animalList)
+      const [data1] = await response.json();
+      setCroc(data1.crocodile)
+      setDolph(data1.dolphin)
+      setCondor(data1.condor)
+      setPanda(data1.panda)
+      setRhino(data1.rhino)
+      setPBears(data1.PBears)
+      setLeopard(data1.leopard)
+      setWhale(data1.whale)
+      setPeng(data1.peng)
+      setMink(data1.mink)
+      setJaguar(data1.jaguar)
     };
-
     loadData();
   },[])
- // console.log(data) 
-  const[temp,setTemp] = useState(data)
-
+  //console.log()
+  const test = [{whale}, {croc}, {mink}, {jaguar}];
+  console.log((test[3]))
   const [buttonPopup, setButtonPopup] = useState(false);
   const [showFinalResults, setFinalResults] = useState(false);
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const questions = [
     { 
-      text: "What colour is a crocodile?",
+      text: "Where does a crocodile live?",
       options: [
-        { id: 0, text: '', isCorrect: false },
-        { id: 1, text: "Gold", isCorrect: true },
-        { id: 2, text: "Green", isCorrect: false },
+        { id: 0, text: croc.habitat, isCorrect: true },
+        { id: 1, text: panda.habitat, isCorrect: false },
+        { id: 2, text: test[2].habitat, isCorrect: false },
         { id: 3, text: "Black", isCorrect: false }
-      ]
-    },
-    {
-      text: "What colour is a Beetle?",
-      options: [
-        { id: 0, text: "Red", isCorrect: false },
-        { id: 1, text: "Gold", isCorrect: false },
-        { id: 2, text: "Green", isCorrect: false },
-        { id: 3, text: "Black", isCorrect: true }
-      ]
-    },
-    {
-      text: "What colour is a Flamingo?",
-      options: [
-        { id: 0, text: "Red", isCorrect: false },
-        { id: 1, text: "Gold", isCorrect: false },
-        { id: 2, text: "Pink", isCorrect: true },
-        { id: 3, text: "Black", isCorrect: false }
-      ]
-    },
-    {
-      text: "What colour is a Elephant?",
-      options: [
-        { id: 0, text: "Red", isCorrect: false },
-        { id: 1, text: "Gold", isCorrect: false },
-        { id: 2, text: "Green", isCorrect: false },
-        { id: 3, text: "Grey", isCorrect: true }
       ]
     }
   ];
@@ -79,13 +70,11 @@ function Mcq() {
     setCurrentQuestion(0);
     setFinalResults(false);
   };
-  {console.log(temp)}
 
   return (
     //section headers
     <div class="Cards">
       <button className = "OPMCQ" onClick={() => setButtonPopup(true)}>Open Mcq</button>
-      <button className = "OPMCQ2" onClick={() => setTemp(data[0])}>Open Mcq</button>  
       <PopupMcq trigger={buttonPopup} setTrigger={setButtonPopup}>
       {showFinalResults ? (
         /*Final results card*/
