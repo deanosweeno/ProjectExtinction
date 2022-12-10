@@ -1,8 +1,12 @@
 
+.Pairs{
+  width: 10vw;
+  height: 3vh;
 
+}
 .OPEN{
-  position: absolute;
-  
+  position: relative;
+  left: 0%;
   }
   
   

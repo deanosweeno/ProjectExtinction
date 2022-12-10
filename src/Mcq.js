@@ -1,31 +1,33 @@
 import React, { useState, useEffect} from 'react';
 import './McqComponent/Mcq.css';
-import PopupMcq from './McqComponent/PopupMcq'; 
+import PopupMcq from './McqComponent/PopupMcq';
+import { fetchPost } from './FetchApi';
 const animalNames = ["crocodile", "condor", "dolphin", "rhino", "panda", "Leopard", "whale", "PBear", "peng", "mink", "jaguar"];
+
 function Mcq() {
   //properties
   const[data,setData] = useState()
-
-
   useEffect(() => {
     const loadData = async () => {
       const response = await fetch("https://raw.githubusercontent.com/deanosweeno/ProjectExtinction/main/public/animalAPI.json");
       const data = await response.json();
       setData(data.animalList)
     };
+
     loadData();
   },[])
-  const array = [data]
-  console.log(array[0])
+ // console.log(data) 
+  const[temp,setTemp] = useState(data)
+
   const [buttonPopup, setButtonPopup] = useState(false);
   const [showFinalResults, setFinalResults] = useState(false);
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const questions = [
-    {
-      text: "What colour is a lion?",
+    { 
+      text: "What colour is a crocodile?",
       options: [
-        { id: 0, text: "Red", isCorrect: false },
+        { id: 0, text: '', isCorrect: false },
         { id: 1, text: "Gold", isCorrect: true },
         { id: 2, text: "Green", isCorrect: false },
         { id: 3, text: "Black", isCorrect: false }
@@ -59,6 +61,7 @@ function Mcq() {
       ]
     }
   ];
+ 
 
   //helperFunction
   const optionClicked = (isCorrect) => {
@@ -76,14 +79,17 @@ function Mcq() {
     setCurrentQuestion(0);
     setFinalResults(false);
   };
+  {console.log(temp)}
+
   return (
     //section headers
     <div class="Cards">
-      <button class = "OPMCQ" onClick={() => setButtonPopup(true)}>Open Mcq</button>   
+      <button className = "OPMCQ" onClick={() => setButtonPopup(true)}>Open Mcq</button>
+      <button className = "OPMCQ2" onClick={() => setTemp(data[0])}>Open Mcq</button>  
       <PopupMcq trigger={buttonPopup} setTrigger={setButtonPopup}>
       {showFinalResults ? (
         /*Final results card*/
-        <div class="final-results">
+        <div className="final-results">
           <h1>Final Result</h1>
           <h2>
             {" "}
@@ -94,11 +100,11 @@ function Mcq() {
         </div>
       ) : (
         /* Question Card*/
-        <div class="question-card">
+        <div className="question-card">
           <h2>
             Question {currentQuestion + 1} out of {questions.length}
           </h2>
-          <h3 class="question-text">{questions[currentQuestion].text}</h3>
+          <h3 className="question-text">{questions[currentQuestion].text}</h3>
 
           <ul>
             {questions[currentQuestion].options.map((option) => {
