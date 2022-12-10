@@ -10,6 +10,7 @@ function PopupPairs(props)
     </div>
   ): "";
 }
+//For Having Pairs appear within a popup window
 
 
 export default PopupPairs;

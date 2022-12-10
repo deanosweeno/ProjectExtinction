@@ -1,20 +1,13 @@
 
-
 .OPEN{
-  position: absolute;
-  
-  }
-  
-  
-  button:hover
-  {
-    background: #0beb70;
-    color: rgb(34, 33, 33);
-  }
-  .Grid
-  {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 40px;
-  }
+position: absolute;
+}
+
+
+.Grid
+{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
