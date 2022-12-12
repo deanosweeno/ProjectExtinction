@@ -53,11 +53,11 @@
       "id":"9",
 			"habitat": "coastal areas",
 			"region": "antarctica",
-			"food": "fishes"
+			"food": "fish"
     },
 		"mink": {
       "id":"10",
-			"habitat": "forested",
+			"habitat": "forests,
 			"region": "eastern europe",
 			"food": "muskrats, rabbits, birds"
     },
