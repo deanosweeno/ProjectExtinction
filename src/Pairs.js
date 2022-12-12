@@ -86,7 +86,9 @@ function Pairs()
 
   useEffect(() => {shuffle()}, []) // Shuffles cards, will be differnt on every instance of the game i.e. when reset is pushed
 
-
+  return (
+    <div className="Pairs"> 
+      <button classname = "OPEN" onClick={() => setButtonPopup(true)}>Open Pairs</button> 
       <PopupPairs trigger={buttonPopup} setTrigger={setButtonPopup}>   
       <button onClick={shuffle}>Retry</button> 
       <div className="Grid">
