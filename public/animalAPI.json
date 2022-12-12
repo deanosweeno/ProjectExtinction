@@ -57,7 +57,7 @@
     },
 		"mink": {
       "id":"10",
-			"habitat": "forests,
+			"habitat": "forests",
 			"region": "eastern europe",
 			"food": "muskrats, rabbits, birds"
     },
