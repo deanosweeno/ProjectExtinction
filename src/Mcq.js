@@ -2,11 +2,11 @@ import React, { useState, useEffect} from 'react';
 import './McqComponent/Mcq.css';
 import PopupMcq from './McqComponent/PopupMcq';
 const animalNames = ["crocodile", "condor", "dolphin", "rhino", "panda", "Leopard", "whale", "PBear", "peng", "mink", "jaguar"];
-
+//random animal function to itterate through array
 var randomAnimal = () =>{
   return animalNames[Math.floor(Math.random() * animalNames.length)];
 }
-
+//declaring animals
 function Mcq() {
   //properties
  const[croc,setCroc] = useState([])
@@ -20,7 +20,8 @@ function Mcq() {
  const[peng,setPeng] = useState([])
  const[mink,setMink] = useState([])
  const[jaguar,setJaguar] = useState([])
-
+//assigning animal variable 
+//assigning wrong answer variable
  const [animal, setAnimal] =useState(randomAnimal());
  const [wrong1, setWrong1] =useState(randomAnimal());
  const [wrong2, setWrong2] =useState(randomAnimal());
@@ -29,11 +30,13 @@ function Mcq() {
  useState(() => {setWrong1(randomAnimal)});
  useState(() => {setWrong2(randomAnimal)});
  useState(() => {setWrong3(randomAnimal)});
+ //declaring variables
  var qAnim = "";
  var anim;
  var w1;
  var w2;
  var w3;
+ //if else statement to display animal on MCQ
  if(animal == "crocodile")
  {
   anim = croc;
@@ -91,7 +94,8 @@ function Mcq() {
  }
 
  console.log(jaguar);
-  useEffect(() => {
+  //accessing external JSON array
+ useEffect(() => {
     const loadData = async () => {
       const response = await fetch("https://raw.githubusercontent.com/deanosweeno/ProjectExtinction/main/public/animalAPI.json");
       const [data1] = await response.json();
@@ -114,8 +118,10 @@ function Mcq() {
   const [showFinalResults, setFinalResults] = useState(false);
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  //new array for mcq questions and answers
   const questions = [
     { 
+      //question 1 with random animal and corresponding correct answer and random incorrect answers
       text: "What habitat does a "+qAnim+" live in?",
       options: [
         { id: 0, text: anim.habitat, isCorrect: true },
@@ -125,6 +131,7 @@ function Mcq() {
       ]
     },
     { 
+      //question 2 with random animal and corresponding correct answer and random incorrect answers
       text: "What region does a "+qAnim+" live in?",
       options: [
         { id: 0, text: "Western Europes", isCorrect: false },
@@ -134,6 +141,7 @@ function Mcq() {
       ]
     },
     { 
+      //question 3 with random animal and corresponding correct answer and random incorrect answers
       text: "What food does a "+qAnim+" eat?",
       options: [
         { id: 0, text: anim.food, isCorrect: true },
@@ -145,7 +153,7 @@ function Mcq() {
   ];
  
 
-  //helperFunction
+  //if else statement to calcuclate accumulative questions
   const optionClicked = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
@@ -156,6 +164,7 @@ function Mcq() {
       setFinalResults(true);
     }
   };
+  //reset function
   const restartGame = () => {
     setScore(0);
     setCurrentQuestion(0);
@@ -163,12 +172,12 @@ function Mcq() {
   };
 
   return (
-    //section headers
+    //return statement holding MCQ start button
     <div class="Cards">
       <button className = "OPMCQ" onClick={() => setButtonPopup(true)}>Open Mcq</button>
       <PopupMcq trigger={buttonPopup} setTrigger={setButtonPopup}>
       {showFinalResults ? (
-        /*Final results card*/
+        //calculating final results
         <div className="final-results">
           <h1>Final Result</h1>
           <h2>
@@ -179,7 +188,7 @@ function Mcq() {
           <button onClick={() => restartGame()}>Restart Game?</button>
         </div>
       ) : (
-        /* Question Card*/
+        // iterating through questions
         <div className="question-card">
           <h2>
             Question {currentQuestion + 1} out of {questions.length}
