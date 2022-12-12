@@ -15,12 +15,19 @@ function Mcq() {
     };
     loadData();
   },[])
+<<<<<<< Updated upstream
   const array = [data]
   console.log(array[0])
+=======
+  //console.log()
+  const test = [{whale}, {croc}, {mink}, {jaguar}, {condor}, {dolph}, {panda}, {peng}, {rhino}, {leopard}, {PBears}, {crocodile}];
+  console.log((test[11]))
+>>>>>>> Stashed changes
   const [buttonPopup, setButtonPopup] = useState(false);
   const [showFinalResults, setFinalResults] = useState(false);
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
+<<<<<<< Updated upstream
   const questions = [
     {
       text: "What colour is a lion?",
@@ -29,6 +36,63 @@ function Mcq() {
         { id: 1, text: "Gold", isCorrect: true },
         { id: 2, text: "Green", isCorrect: false },
         { id: 3, text: "Black", isCorrect: false }
+=======
+  const questions1 = [
+    { 
+      text: "What type of area does a crocodile prefer?",
+      options: [
+        { id: 0, text: croc.habitat, isCorrect: true },
+        { id: 1, text: peng.habitat, isCorrect: false },
+        { id: 2, text: jaguar.habitat, isCorrect: false },
+        { id: 3, text: whale, isCorrect: false }
+      ]
+    },
+    { 
+      text: "What does a panda eat?",
+      options: [
+        { id: 0, text: croc.food, isCorrect: false },
+        { id: 1, text: panda.food, isCorrect: true },
+        { id: 2, text: mink.food, isCorrect: false },
+        { id: 3, text: condor.food, isCorrect: false }
+      ]
+    },
+    { 
+      text: "Where does a mink live?",
+      options: [
+        { id: 0, text: croc.region, isCorrect: false },
+        { id: 1, text: panda.region, isCorrect: false },
+        { id: 2, text: mink.region, isCorrect: true },
+        { id: 3, text: peng.region, isCorrect: false }
+      ]
+    }
+  ];
+  const questions2 = [
+    { 
+      text: "What type of area does a condor prefer?",
+      options: [
+        { id: 0, text: PBears.habitat, isCorrect: false },
+        { id: 1, text: peng.habitat, isCorrect: false },
+        { id: 2, text: condor.habitat, isCorrect: true },
+        { id: 3, text: dolph.habitat, isCorrect: false }
+      ]
+    },
+    {
+      text: "What does a penguin eat?",
+      options: [
+        { id: 0, text: PBears.food, isCorrect: false },
+        { id: 1, text: peng.food, isCorrect: true },
+        { id: 2, text: condor.food, isCorrect: false },
+        { id: 3, text: dolph.food, food: false }
+      ]
+    },
+    {
+      text: "Where does a Polar Bear live?",
+      options: [
+        { id: 0, text: PBears.region, isCorrect: true },
+        { id: 1, text: peng.region, isCorrect: false },
+        { id: 2, text: condor.region, isCorrect: false },
+        { id: 3, text: dolph.region, food: false }
+>>>>>>> Stashed changes
       ]
     },
     {
@@ -58,7 +122,22 @@ function Mcq() {
         { id: 3, text: "Grey", isCorrect: true }
       ]
     }
+    
   ];
+<<<<<<< Updated upstream
+=======
+  const questions3 = [
+    { 
+      text: "What type of area does a condor prefer?",
+      options: [
+        { id: 0, text: jaguar.habitat, isCorrect: false },
+        { id: 1, text: peng.habitat, isCorrect: false },
+        { id: 2, text: condor.habitat, isCorrect: true },
+        { id: 3, text: dolph.habitat, isCorrect: false }
+      ]
+    },
+  ]
+>>>>>>> Stashed changes
 
   //helperFunction
   const optionClicked = (isCorrect) => {
