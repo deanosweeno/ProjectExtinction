@@ -11,7 +11,9 @@ button
   position: 430px;
 } 
 
-
+.Map{
+  font-size: large;
+}
 button:hover
 {
   background: #0beb70;
@@ -168,7 +170,6 @@ img{
     position: absolute;
     top: 10%;
     left: 25%;
-    font-size: small;
 }
 .popup-header-Whale{
     display:flex;
@@ -193,7 +194,6 @@ img{
     position: absolute;
     top: 10%;
     left: 25%;
-    font-size: small;
 }
 .popup-header-Calicondor{
     display:flex;
@@ -329,7 +329,6 @@ img{
     position: absolute;
     top: 10%;
     left: 25%;
-    font-size: small;
   }
   
   .main-Rhino{
