@@ -2,13 +2,12 @@ import React, { useState, useEffect} from 'react';
 import './McqComponent/Mcq.css';
 import PopupMcq from './McqComponent/PopupMcq';
 const animalNames = ["crocodile", "condor", "dolphin", "rhino", "panda", "Leopard", "whale", "PBear", "peng", "mink", "jaguar"];
-//random animal function to itterate through array
+//random animal function to iterate through array of animal names
 var randomAnimal = () =>{
   return animalNames[Math.floor(Math.random() * animalNames.length)];
 }
-//declaring animals
 function Mcq() {
-  //properties
+  //creating constants for each animal in the json
  const[croc,setCroc] = useState([])
  const[dolph,setDolph] = useState([])
  const[condor,setCondor] = useState([])
@@ -20,25 +19,17 @@ function Mcq() {
  const[peng,setPeng] = useState([])
  const[mink,setMink] = useState([])
  const[jaguar,setJaguar] = useState([])
-//assigning animal variable 
-//assigning wrong answer variable
+
+ //assigning animal to random animal name from above
  const [animal, setAnimal] =useState(randomAnimal());
- const [wrong1, setWrong1] =useState(randomAnimal());
- const [wrong2, setWrong2] =useState(randomAnimal());
- const [wrong3, setWrong3] =useState(randomAnimal());
  useState(() => {setAnimal(randomAnimal)});
- useState(() => {setWrong1(randomAnimal)});
- useState(() => {setWrong2(randomAnimal)});
- useState(() => {setWrong3(randomAnimal)});
- //declaring variables
+ 
+ //declaring variables to be used in questions and answers
  var qAnim = "";
  var anim;
- var w1;
- var w2;
- var w3;
- //if else statement to display animal on MCQ
+ //Check if animal var matches animal names and then changing the answer and question variables accordingly
  if(animal == "crocodile")
- {
+ { //if random var animal is crocodile then set the vars below to corresponding values for questions and answers...repeated for every if statement
   anim = croc;
   qAnim = "crocodile";
  }
@@ -111,17 +102,20 @@ function Mcq() {
       setMink(data1.mink)
       setJaguar(data1.jaguar)
     };
-    loadData();
+    loadData(); //instantiating all the new objects created from the json array
   },[])
-  //console.log()
+
+  //creating constants for popup, users score etc.
   const [buttonPopup, setButtonPopup] = useState(false);
   const [showFinalResults, setFinalResults] = useState(false);
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  //new array for mcq questions and answers
+
+
+  //Array of questions and answers below will be semi-random(the animal names and properties change per popup)
   const questions = [
     { 
-      //question 1 with random animal and corresponding correct answer and random incorrect answers
+      
       text: "What habitat does a "+qAnim+" live in?",
       options: [
         { id: 0, text: anim.habitat, isCorrect: true },
@@ -131,7 +125,7 @@ function Mcq() {
       ]
     },
     { 
-      //question 2 with random animal and corresponding correct answer and random incorrect answers
+      
       text: "What region does a "+qAnim+" live in?",
       options: [
         { id: 0, text: "Western Europes", isCorrect: false },
@@ -141,7 +135,7 @@ function Mcq() {
       ]
     },
     { 
-      //question 3 with random animal and corresponding correct answer and random incorrect answers
+      
       text: "What food does a "+qAnim+" eat?",
       options: [
         { id: 0, text: anim.food, isCorrect: true },
@@ -172,7 +166,7 @@ function Mcq() {
   };
 
   return (
-    //return statement holding MCQ start button
+    //return statement holding MCQ start button...MCQ encapsulated in Popup window
     <div class="Cards">
       <button className = "OPMCQ" onClick={() => setButtonPopup(true)}>Open Mcq</button>
       <PopupMcq trigger={buttonPopup} setTrigger={setButtonPopup}>
