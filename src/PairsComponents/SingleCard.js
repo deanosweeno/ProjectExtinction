@@ -3,7 +3,7 @@ import './SingleCard.css'
 export default function SingleCard({card, handleChoice, flipped, disabled })
 {
   const handleClick = () => {
-    if(!disabled){
+    if(!disabled){ // Invokes handle choice command which saves and compares the two user selections while the game is running
       handleChoice(card)
     }
   }

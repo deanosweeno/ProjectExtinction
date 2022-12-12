@@ -84,7 +84,7 @@ function Pairs()
   setTurns(prevTurns => prevTurns + 1)
   setDisabled(false)} // Monitors, increments and resets turns once appropriate actions have occurred
 
-  useEffect(() => {shuffle()}, []) // Shuffles cards, will be differnt on every instance of the game i.e. when reset is pushed
+  useEffect(() => {shuffle()}, []) // Shuffles cards, will be different on every instance of the game i.e. when reset is pushed
 
   return (
     <div className="Pairs"> 

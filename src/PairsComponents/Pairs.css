@@ -1,21 +1,17 @@
 
-.Pairs{
+.Pairs{ /*Pairs window */
   width: 10vw;
   height: 3vh;
 
 }
+
 .OPEN{
   position: relative;
   left: 0%;
   }
   
   
-  button:hover
-  {
-    background: #0beb70;
-    color: rgb(34, 33, 33);
-  }
-  .Grid
+  .Grid /*Grid of cards */
   {
     margin-top: 40px;
     display: grid;

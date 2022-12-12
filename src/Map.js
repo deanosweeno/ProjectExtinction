@@ -112,7 +112,7 @@ function Map () {
                     setPopRhino(false);
                   }
 
-    return (
+    return ( //Returns map, buttons and their corresponding popups, 
       <div className="Map">
         <img src ="/images/map.png" alt = ""/>
         <button className=  "Penguin" onClick={handleClickOpen} >Penguin</button>
@@ -144,7 +144,10 @@ function Map () {
                 <p> <strong>Status: </strong>Threatened</p>
                 <p> Penguins are a group of swimming birds that can't fly. 
                   They mainly live in Antartica and prefer coastal regions.
-                  Penguins eat squids, krill, and fish. </p>
+                  Penguins eat squids, krill, and fish. 
+                  Penguins are monogamous, meaning that they mate for life, coming back time and time again 
+                  to same partner!
+                  </p>
               </div>
             </div>
           </div>:""}
@@ -167,7 +170,10 @@ function Map () {
                   It is the largest cat species in the Americas.
                   Jaguars often live in the tropics in South America.
                   Jaguars can prey upon almost anything they come across,
-                  deer, tortoises, fish, birds and monkeys.</p>
+                  deer, tortoises, fish, birds and monkeys.
+                  Jaguars are incredibly large, being the third largest cats after lions and tigers,
+                  males can weigh up to 120kg!
+                  </p>
                 
               </div>
             </div>
@@ -189,8 +195,8 @@ function Map () {
                 <p> <strong>Status: </strong> Endangered</p>
                 <p> A dolphin is an aquatic mammal. 
                   Dolphins live in open oceans and coastal waters.
-                  Dolphins are active predators and eat a wide variety of fishes, squids, 
-                  and shrimps.
+                  Dolphins are active predators and eat a wide variety of fish, squids, 
+                  and shrimps. Dolphins are very intelligent and live in families called pods.
                   </p>
               </div>
             </div>
@@ -215,7 +221,10 @@ function Map () {
                 <p> Whales are a widely distributed group of aquatic mammals.
                   Whales swim in almost all major oceans.
                   They love salt water.
-                  They love to eat krill, fish, phytoplankton, and algae. </p>
+                  They love to eat krill, fish, phytoplankton, and algae.
+                  Whales can form intimate friend and family groups, communicate, grieve lost loved ones and even play
+                  like us humans!
+                   </p>
               </div>
             </div>
           </div>:""}
@@ -258,7 +267,10 @@ function Map () {
                 <p> <strong>Status: </strong>Endangered </p>
                 <p> The leopard lives in some parts of Asia, Russia, India, and Africa.
                     Their habitat is deserts and grasslands.
-                   Their diet depends on what is around them, such as small mamals, fish, and birds. </p>
+                   Their diet depends on what is around them, such as small mamals, fish, and birds.
+                   What you may find surprising is that leopards are incredibly quick, being able to run at
+                   speeds of up to 58km/h!
+                    </p>
 
               </div>
             </div>
@@ -282,9 +294,12 @@ function Map () {
                 { <img className = "PolarBearPic" src = "/images/polarbears.png" alt =""></img> }
                 <p> <strong>Status: </strong> Critically Endangered </p>
                 <p>The polar bear lives largely within the Arctic Circle.
-                  They like sea ice. 
+                  They rely on sea ice as it's their natural habitat. 
                   It is the largest bear species, as well as the largest land carnivore.
-                  Polar bears favurite food is seals. </p>
+                  Polar bears' favourite food is seals.
+                  Polar bears' fur is great for camouflage but did you know that under that fuzz
+                  they have black skin!
+                   </p>
               </div>
             </div>
           </div>:""}
@@ -329,7 +344,8 @@ function Map () {
                 <p> <strong>Status: </strong>Vulnerable </p>
                 <p>The panda bear lives in China.
                 Pandas live mainly in forests high in the mountains, 
-                where they eat bamboo.
+                where they eat bamboo. Pandas spend 12 hours a day eating!
+                They can even climb trees!
                   </p>
               </div>
             </div>
@@ -353,7 +369,9 @@ function Map () {
                 <p>Crocodiles are large reptiles, that live in Africa, Asia, the Americas and Australia. 
                   They like to live on land and water, so they tend to congregate in habitats such as rivers,
                   lakes and swamps. Crocodiles are  carnivorous, so they eat a 
-                  variety of things, such as small mammals, frogs, insects, and lizards.</p>
+                  variety of things, such as small mammals, frogs, insects, and lizards.
+                  crocodiles are one of the only animals that are thought to have survived the asteroid that wiped out the dinosaurs!
+                  </p>
               </div>
             </div>
           </div>:""}
@@ -374,7 +392,9 @@ function Map () {
                 <p> <strong>Status: </strong>Critically Endangered </p>
                 <p>Rhino's are native to Africa, South and Southeast Asia.
                   Rhinos are browsers that eat mostly trees and bushes. 
-                  They use their lips to pluck leaves and fruit from the branches.</p>
+                  They use their lips to pluck leaves and fruit from the branches.
+                  Rhinos have very very poor eyesight, in fact they couldn't see you standing still from just 30 metres away!
+                  </p>
                  
               </div>
             </div>

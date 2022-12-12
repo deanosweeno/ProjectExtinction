@@ -2,7 +2,7 @@
     height: 100vh;
     width: 100vw;
 }
-.Start-btn{
+.Start-btn{ /*For start button on splash screen */
     margin: 0;
     height: 5vh;
     width: 8vw;
@@ -16,8 +16,4 @@
     font-style: italic
 }
 
- img{
-    
-    height: 100vh;
-    width: 100vw;
-} 
+
