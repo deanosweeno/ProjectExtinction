@@ -3,6 +3,10 @@ import './McqComponent/Mcq.css';
 import PopupMcq from './McqComponent/PopupMcq';
 const animalNames = ["crocodile", "condor", "dolphin", "rhino", "panda", "Leopard", "whale", "PBear", "peng", "mink", "jaguar"];
 
+var randomAnimal = () =>{
+  return animalNames[Math.floor(Math.random() * animalNames.length)];
+}
+
 function Mcq() {
   //properties
  const[croc,setCroc] = useState([])
@@ -10,12 +14,83 @@ function Mcq() {
  const[condor,setCondor] = useState([])
  const[panda,setPanda] = useState([])
  const[rhino,setRhino] = useState([])
- const[PBears,setPBears] = useState([])
+ const[PBear,setPBears] = useState([])
  const[leopard,setLeopard] = useState([])
  const[whale,setWhale] = useState([])
  const[peng,setPeng] = useState([])
  const[mink,setMink] = useState([])
  const[jaguar,setJaguar] = useState([])
+
+ const [animal, setAnimal] =useState(randomAnimal());
+ const [wrong1, setWrong1] =useState(randomAnimal());
+ const [wrong2, setWrong2] =useState(randomAnimal());
+ const [wrong3, setWrong3] =useState(randomAnimal());
+ useState(() => {setAnimal(randomAnimal)});
+ useState(() => {setWrong1(randomAnimal)});
+ useState(() => {setWrong2(randomAnimal)});
+ useState(() => {setWrong3(randomAnimal)});
+ var qAnim = "";
+ var anim;
+ var w1;
+ var w2;
+ var w3;
+ if(animal == "crocodile")
+ {
+  anim = croc;
+  qAnim = "crocodile";
+ }
+ else if(animal == "dolphin")
+ {
+  anim = dolph;
+  qAnim = "dolphin";
+ }
+ else if(animal == "condor")
+ {
+  anim = condor;
+  qAnim = "California condor";
+ }
+ else if(animal == "rhino")
+ {
+  anim = rhino;
+  qAnim = "rhino";
+ }
+ else if(animal == "panda")
+ {
+  anim = panda;
+  qAnim = "panda";
+ }
+ else if(animal == "PBear")
+ {
+  anim = PBear;
+  qAnim = "polar bear";
+ }
+ else if(animal == "leopard")
+ {
+  anim = leopard;
+  qAnim = "leopard";
+ }
+ else if(animal == "whale")
+ {
+  anim = whale;
+  qAnim = "whale";
+ }
+ else if(animal == "peng")
+ {
+  anim = peng;
+  qAnim = "penguin";
+ }
+ else if(animal == "mink")
+ {
+  anim = mink;
+  qAnim = "mink";
+ }
+ else if(animal == "jaguar")
+ {
+  anim = jaguar;
+  qAnim = "jaguar";
+ }
+
+ console.log(jaguar);
   useEffect(() => {
     const loadData = async () => {
       const response = await fetch("https://raw.githubusercontent.com/deanosweeno/ProjectExtinction/main/public/animalAPI.json");
@@ -35,20 +110,36 @@ function Mcq() {
     loadData();
   },[])
   //console.log()
-  const test = [{whale}, {croc}, {mink}, {jaguar}];
-  console.log((test[3]))
   const [buttonPopup, setButtonPopup] = useState(false);
   const [showFinalResults, setFinalResults] = useState(false);
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const questions = [
     { 
-      text: "Where does a crocodile live?",
+      text: "What habitat does a "+qAnim+" live in?",
       options: [
-        { id: 0, text: croc.habitat, isCorrect: true },
-        { id: 1, text: panda.habitat, isCorrect: false },
-        { id: 2, text: test[2].habitat, isCorrect: false },
-        { id: 3, text: "Black", isCorrect: false }
+        { id: 0, text: anim.habitat, isCorrect: true },
+        { id: 1, text: anim.region, isCorrect: false },
+        { id: 2, text: "Mountains", isCorrect: false },
+        { id: 3, text: "Hello World", isCorrect: false }
+      ]
+    },
+    { 
+      text: "What region does a "+qAnim+" live in?",
+      options: [
+        { id: 0, text: "Western Europes", isCorrect: false },
+        { id: 1, text: anim.region, isCorrect: true },
+        { id: 2, text: anim.habitat, isCorrect: false },
+        { id: 3, text: "Hello World", isCorrect: false }
+      ]
+    },
+    { 
+      text: "What food does a "+qAnim+" eat?",
+      options: [
+        { id: 0, text: anim.food, isCorrect: true },
+        { id: 1, text: "Trees", isCorrect: false },
+        { id: 2, text: anim.habitat, isCorrect: false },
+        { id: 3, text: "Hello World", isCorrect: false }
       ]
     }
   ];
